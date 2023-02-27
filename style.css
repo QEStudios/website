@@ -12,7 +12,7 @@ html,body {
     .card {
         width: auto;
         margin: 2vw 5%;
-        padding: 5vw 4vw 5vw 4vw;
+        padding: 5vw 4vw 3vw 4vw;
         border-radius: 1.5vw;
         box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.6);
     }
@@ -45,12 +45,25 @@ html,body {
         padding: 1.5vw;
         margin: 0 1.5vw 0 1.5vw;
     }
+    .footer {
+        padding: 2vw 0 0 0;
+        font-size: 2vw;
+    }
+    .button {
+        transition: transform ease 0.3s, background-color ease 0.3s, box-shadow ease 0.3s;
+        box-shadow: 0px 0px 2vw 0px rgba(0,0,0,0.6);
+    }
+    .button:hover {
+        background-color: #27282b;
+        box-shadow: 0px 0px 3vw 0.4vw rgba(0,0,0,0.6);
+        cursor: pointer;
+    }
 }
 @media screen and (orientation:landscape) {
     .card {
         width: max(50%, 300px);
         margin: 1.5vw auto;
-        padding: 2vw 2vw 2vw 2vw;
+        padding: 2vw 2vw 1vw 2vw;
         border-radius: 1vw;
         box-shadow: 0px 0px 0.75vw 0px rgba(0,0,0,0.6);
     }
@@ -82,6 +95,19 @@ html,body {
         border-radius: 1vw;
         padding: 1vw;
         margin: 0 1vw 0 1vw;
+    }
+    .footer {
+        padding: 1vw 0 0 0;
+        font-size: 0.75vw;
+    }
+    .button {
+        transition: transform ease 0.3s, background-color ease 0.3s, box-shadow ease 0.3s;
+        box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.6);
+    }
+    .button:hover {
+        background-color: #27282b;
+        box-shadow: 0px 0px 1.5vw 0.2vw rgba(0,0,0,0.6);
+        cursor: pointer;
     }
 }
 
@@ -120,23 +146,15 @@ html,body {
     text-decoration: underline;
 }
 
-.card-footer {
-    padding: 20px 0 0 0;
-    font-size: 11pt;
+.footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.card-text {
-    padding: 20px 0 0 0;
-    font-size: 14pt;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: #5a5c63;
 }
 
 .card-socialbutton {
     background-color: #232427;
     width: fit-content;
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     border: 0;
@@ -148,17 +166,6 @@ html,body {
 
 .card-thumbnailbutton:hover {
     transform: scale(1.03);
-}
-
-.button {
-    transition: transform ease 0.3s, background-color ease 0.3s, box-shadow ease 0.3s;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
-}
-
-.button:hover {
-    background-color: #27282b;
-    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.6);
-    cursor: pointer;
 }
 
 .buttons {
@@ -179,6 +186,10 @@ html,body {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+.thumbnail {
+    height: auto;
 }
 
 .card-center {
