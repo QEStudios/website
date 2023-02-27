@@ -38,6 +38,7 @@ html,body {
     }
     .thumbnail {
         width: 100%;
+        border-radius: 1vw;
     }
     .nested-card {
         border-radius: 1.5vw;
@@ -75,6 +76,7 @@ html,body {
     }
     .thumbnail {
         width: 80%;
+        border-radius: 0.4vw;
     }
     .nested-card {
         border-radius: 1vw;
