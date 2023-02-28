@@ -58,6 +58,9 @@ html,body {
         box-shadow: 0px 0px 3vw 0.4vw rgba(0,0,0,0.6);
         cursor: pointer;
     }
+    .fuzzy {
+        display: none;
+    }
 }
 @media screen and (orientation:landscape) {
     .card {
@@ -202,4 +205,52 @@ html,body {
 
 .card-right {
     text-align: right;
+}
+
+.fuzzy-container {
+    position: relative;
+    height: 100%;
+}
+
+.fuzzy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15vw;
+    height: 2.25vw;
+    padding: 0;
+    transition: height ease 0.4s;
+    background-color: transparent;
+    border: none;
+}
+.fuzzy:not(.bounce):hover {
+    height: 11vw;
+}
+.fuzzy:hover {
+    cursor: pointer;
+}
+
+.bounce-1 {
+    transition: height ease-out 0.275s;
+    height: 15vw;
+}
+.bounce-2 {
+    transition: height ease-in 0.275s;
+    height: 11vw;
+}
+
+.fuzzy-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15vw;
+    height: inherit;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+@keyframes bounce-keyframes {
+    0% {height: 10vw;}
+    100% {height: 15vw;}
 }
