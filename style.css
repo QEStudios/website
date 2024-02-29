@@ -24,6 +24,7 @@ html,body {
     }
     .socialicon {
         width: 5vw;
+        height: 5vw;
     }
     .card-socialbutton {
         padding: 2vw;
